@@ -12,7 +12,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         try {
-            System.out.print("Inserisci il nuovo valore per la prima posizione (compreso tra 1 e 10): ");
+            System.out.print("Inserisci il nuovo valore per la prima posizione  ");
             int newArrayNumber = input.nextInt();
 
             if (newArrayNumber < 1 || newArrayNumber > 10) {
