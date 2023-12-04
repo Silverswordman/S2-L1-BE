@@ -11,21 +11,37 @@ public class Main {
 
         Scanner input = new Scanner(System.in);
 
-        try {
-            System.out.print("Inserisci il nuovo valore per la prima posizione  ");
-            int newArrayNumber = input.nextInt();
+        do {
+            try {
+                System.out.print("Inserisci il nuovo valore che vuoi inserire  ");
+                int newArrayNumber = input.nextInt();
 
-            if (newArrayNumber < 1 || newArrayNumber > 10) {
-                throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 10.");
+                if (newArrayNumber < 1 || newArrayNumber > 10) {
+                    throw new IllegalArgumentException("Il numero deve essere compreso tra 1 e 10.");
+                }
+
+                System.out.print("Inserisci la posizione che vuoi modificare  ");
+                int newArrayPosition = input.nextInt() - 1;
+
+                if (newArrayPosition < 0 || newArrayPosition > 4) {
+                    throw new ArrayIndexOutOfBoundsException("La posizione deve essere compresa tra 1 e 5.");
+                }
+
+                array[newArrayPosition] = newArrayNumber;
+
+                System.out.println("Nuovo valore inserito: " + newArrayNumber + " nella " + (newArrayPosition + 1) + " posizione ");
+                System.out.println("Nuovo array: " + myArray);
+
+            } catch (Exception e) {
+                System.err.println("Si è verificato un errore durante l'input: " + e.getMessage());
+                input.nextLine();
+                continue;
             }
 
-            array[0] = newArrayNumber;
-            System.out.println("Nuovo valore inserito: " + newArrayNumber);
-            System.out.println("Nuovo array: " + myArray);
-        } catch (Exception e) {
-            System.err.println("Si è verificato un errore durante l'input: " + e.getMessage());
-        } finally {
-            input.close();
-        }
+            break;
+
+        } while (true);
+
+        input.close();
     }
 }

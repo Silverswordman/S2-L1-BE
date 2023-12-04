@@ -1,10 +1,10 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜’ÒÄûÿÿÿÿ8„¨¶ªÃ1
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ü§è½ùÿÿÿÿ8µÝÙ­Ã1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜’ÒÄûÿÿÿÿ8¹ÝÙ­Ã1
 G	java:S106
-"+Replace this use of System.out by a logger.(Âåšß8€˜ÅªÃ1
-L	java:S106"+Replace this use of System.out by a logger.(¡åÚÄÿÿÿÿÿ8†˜ÅªÃ1
-G	java:S106"+Replace this use of System.out by a logger.(¿¦œ 8Š˜ÅªÃ1
-G	java:S106"+Replace this use of System.out by a logger.(È¢ƒä8Š˜ÅªÃ1
-L	java:S106"+Replace this use of System.err by a logger.(€Áéçþÿÿÿÿ8‹˜ÅªÃ1
-L
-java:S2093"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8‹˜ÅªÃ1
+"+Replace this use of System.out by a logger.(Âåšß8äßÙ­Ã1
+G	java:S106"+Replace this use of System.out by a logger.(’¿‰ê8éßÙ­Ã1
+L	java:S106"+Replace this use of System.out by a logger.(¯ÒÚ–ÿÿÿÿÿ8ìßÙ­Ã1
+L	java:S106 "+Replace this use of System.out by a logger.(ËƒŸªýÿÿÿÿ8äªâ­Ã1
+G	java:S106!"+Replace this use of System.out by a logger.(È¢ƒä8äªâ­Ã1
+L	java:S106$"+Replace this use of System.err by a logger.(€Áéçþÿÿÿÿ8åªâ­Ã1
